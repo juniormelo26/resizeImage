@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redimensionar Imagem</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="upload-box">
+            <input type="file" accept="image/*" hidden>
+            <img src="./upload-icon.svg" alt="Icone Upload">
+            <p>Buscar Imagem</p>
+        </div>
+        <div class="content">
+            <div class="row sizes">
+                <div class="collum width">
+                    <label>Largura</label>
+                    <input type="number">
+                </div>
+                <div class="collum height">
+                    <label>Altura</label>
+                    <input type="number">
+                </div>
+            </div>
+            <div class="row checkboxes">
+                <div class="collum ratio">
+                    <input type="checkbox" id="ratio" checked>
+                    <label>Manter proporção</label>
+                </div>
+                <div class="collum quality">
+                    <input type="checkbox" id="quality">
+                    <label>Reduzir qualidade</label>
+                </div>
+            </div>
+            <button class="download-btn">Baixar Imagem</button>
+        </div>
+    </div>
+    
+</body>
+</html>
